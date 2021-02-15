@@ -5,10 +5,9 @@ import axiosMock from 'axios';
 describe('Teste do componente de listagem de estados', () => {
 
     it('DEVE GERAR UMA LISTAGEM DE ESTADOS', async () => {
-        axiosMock.get.mockResolvedValue({data: ['AC']});
+        axiosMock.get.mockResolvedValue({ data: [{ nome: 'São Paulo', sigla: 'SP'}]});
         const { findByTestId } = render(<ListarEstados />);
         expect(axiosMock.get).toHaveBeenCalledTimes(1);
-        expect(await findByTestId('AC')).toHaveTextContent('AC');
+        expect(await findByTestId('SP')).toHaveTextContent('São Paulo');
     });
-
 });   

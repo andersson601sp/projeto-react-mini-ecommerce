@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 
 function ListarProdutos(props) {
-
+/*
     const PRODUTOS_URL = 'http://localhost:3001/mini-ecommerce/produtos';
     const [produtos, setProdutos] = useState([]);
 
@@ -23,8 +23,8 @@ function ListarProdutos(props) {
         listaEProdutos();
     }, []);
 
-
-   /* const produtos = [
+*/
+    const produtos = [
         { nome: 'Java', preco: 'R$ 59,99' },
         { nome: 'JavaScript', preco: 'R$ 39,99' },
         { nome: 'Delphi', preco: 'R$ 29,99' },
@@ -34,7 +34,7 @@ function ListarProdutos(props) {
         { nome: 'React', preco: 'R$ 29,99' },
         { nome: 'Vue', preco: 'R$ 29,99' },
         { nome: 'PHP', preco: 'R$ 39,99' },
-    ];*/
+    ];
 
     function handleComprar(event, produto) {
         event.preventDefault();

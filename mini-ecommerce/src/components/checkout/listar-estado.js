@@ -15,17 +15,17 @@ function  ListarEstados() {
             let { data } = await axios.get(ESTADOS_URL);
             setEstados(data); 
         } catch (err) {
-            setEstados([]);
+            //setEstados([]);
         }
  
     }
 
     useEffect(() => {
         listaEstados();
-    }, []);
-
-    /*
-    const estados = [
+    }, [estados]);
+    
+    
+    /*const estados = [
         {"nome": "Selecione o estado", "sigla": ""},
         {"nome": "Acre", "sigla": "AC"},
         {"nome": "Alagoas", "sigla": "AL"},
